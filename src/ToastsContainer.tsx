@@ -50,6 +50,15 @@ export class ToastsContainer extends Component<IToastsContainerProps, IToastsCon
     });
 
     const styles: any = {};
+    styles.position = 'fixed';
+    styles.overflow = 'hidden';
+    styles.zIndex = 999999999999;
+    styles.maxHeight = 'calc(100vh - 10px)';
+    styles.textAlign = 'right';
+    styles.display = 'flex';
+    styles.flexDirection = 'column';
+    styles.alignItems = 'flex-end';
+    
     switch (this.props.position) {
       case ToastsContainerPosition.TOP_LEFT:
         styles.top = 10;
