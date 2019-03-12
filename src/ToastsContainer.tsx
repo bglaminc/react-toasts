@@ -53,6 +53,7 @@ export class ToastsContainer extends Component<IToastsContainerProps, IToastsCon
     styles.position = 'fixed';
     styles.overflow = 'hidden';
     styles.zIndex = 999999999999;
+    styles.height = 'auto';
     styles.maxHeight = 'calc(100vh - 10px)';
     styles.textAlign = 'right';
     styles.display = 'flex';
